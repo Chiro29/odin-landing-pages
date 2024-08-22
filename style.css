@@ -37,11 +37,12 @@ li a, footer {
 
 button, .white {
   color: white;
-  padding: 8px 16px;
 }
 
-.blue {
+.sign-container, button {
   background-color: #3882F6;
+  border-radius: 12px;
+  padding: 8px 16px;
 }
 
 .h-container {
@@ -63,27 +64,29 @@ h1 {
 }
 
 .h-container button {
-  border-radius: 12px;
   font-weight: 700;
+}
+
+img, .sign-container {
+  border-radius: 18px;
 }
 
 img.h-img {
   width: 600px;
-  border-radius: 18px;
 }
 
-.main-section {
+.info-section, .quote-container {
   padding: 64px 128px;
 }
 
 h2, .info-container {
   text-align: center;
-  margin-bottom: 64px;
 }
 
 h2 {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 64px;
 }
 
 .info-container {
@@ -99,5 +102,40 @@ h2 {
 img{
   width: 200px;
   height: 200px;
-  border-radius: 18px;
+}
+
+.quote-container {
+  background-color: #E5E7EB;
+}
+
+q, .quote-container p {
+  font-size: 36px;
+  color: #1F2937;
+  margin: 0;
+}
+
+q {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.quote-container p {
+  text-align: end;
+  font-weight: bold;
+}
+
+.sign-container {
+  margin: 64px 128px;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sign-container button {
+  border-color: white;
+}
+
+footer {
+  text-align: center;
 }
